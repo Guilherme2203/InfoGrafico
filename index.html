@@ -1,71 +1,217 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <title>Prova 1 - Trabalho InfoGrafico</title>
+    <meta name="viewport" content="initial-scale=1.0 minimal-ui" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="marcolago" />
 
-<head>
-  <meta charset="utf-8">
-  <title>Prova 1 - Trabalho InfoGrafico</title>
-  <meta name="viewport" content="initial-scale=1.0 minimal-ui">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="author" content="marcolago">
+    <!-- icons -->
+    <link href="img/icon.png" rel="icon" />
 
-  <!-- icons -->
-  <link href="img/icon.png" rel="icon">
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Aclonica|Fredericka+the+Great|Jomolhari|Modak|Oswald&display=swap"
+      rel="stylesheet"/>
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Aclonica|Fredericka+the+Great|Jomolhari|Modak|Oswald&display=swap"
-    rel="stylesheet">
+    <!-- Main Stylesheet File -->
+    <link href="css/style.css" rel="stylesheet" />
 
-  <!-- Main Stylesheet File -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- Links Jvectormap -->
+    <link rel="stylesheet" href="jquery-jvectormap-2.0.3.css" type="text/css" media="screen"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <!-- Links Flowtime -->
-  <title>Flowtime.js</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/flowtime.css">
-  <link rel="stylesheet" href="css/themes/default.css">
-</head>
+    <!-- Links Flowtime -->
+    <title>Flowtime.js</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/flowtime.css" />
+    <link rel="stylesheet" href="css/themes/default.css" />
 
-  <body class="">
-<!--==========================
-        Seção da Intro
-        ============================-->
+    <style>
+        #world-map {
+          width: 1440px; 
+          height: 900px;
+          margin: 0 auto;
+        }
+    </style>
+  </head>
+
+  <body>
+    <!-- Seção da Intro -->
     <div class="flowtime">
       <div class="ft-section">
         <div class="ft-page">
-          <h1>Section 1 - Page 1</h1>
+          <h1>Terra, planeta Água</h1>
+          <h2>Países com menor disponibilidade hídrica do mundo, o consumo de água
+            no mundo, a alta demanda com pouca disponibilidade de agua, e
+            poluição hídrica.</h2>
+        </div>
+
+        <!--==========================
+        Seção Paises com menor quantidade de água
+        ============================-->
+        <div class="ft-page">
+          <h1>Paises com a menor quantidade de água per capta</h1>
+          <p>Como todos já sabemos, apenas 3% de toda a água do mundo é potável e
+            boa parte dela é advindo das geleiras, tornando-a um recurso natural
+            de difícil ou impossível captação. Sendo assim sabemos que a água é
+            de extrema importância para a sobrevivência e manutenção dos seres
+            ainda existentes.</p>
+          <p>Do mesmo modo, é imprescindível lembrar que este recurso não é
+            distribuído igualmente por todos os territórios. Enquanto algumas
+            regiões apresentam grandes reservas, outras convivem com a escassez.</p>
+          <p>A seguir podemos observar um mapa contendo as regiões em que a
+            situação é considerada mais critica em relação a falta deste
+            recurso, segundo a Unesco, com a quantidade per capita de água por
+            país, isto é, a disponibilidade de água para cada habitante.</p>
         </div>
         <div class="ft-page">
-          <h1>Section 1 - Page 2</h1>
+            <div id="world-map"></div>
+
+      
+      <!-- Modal -->
+      <div class="modal fade" id="BR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Brazil</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Modal do Brasil
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="modal fade" id="US" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">USA</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Os gringos
+            </div>
+          </div>
+        </div>
+      </div>
         </div>
         <div class="ft-page">
-          <h1>Section 1 - Page 3</h1>
+          <p>A situação do Kuwait é realmente muito crítica, porém com uma solução 
+            muito inteligente. O país se situa no golfo pérsico convive com quase
+            nenhum recurso hídrico, então desenvolveu a técnica da dessalinização 
+            da água do mar para poder combater sua permanente crise hídrica, além 
+            da importação da água de outros paises.</p>
+          <p>A técnica da dessalinização, inclusive, parece ser a saída mais 
+            adequada e procurada pelos países do Oriente Médio que sofrem com 
+            a baixa disponibilidade de água. Nos Emirados Árabes, segundo lugar 
+            no mostrado no mapa acima, a técnica é amplamente utilizada e recebe muitos 
+            investimentos, principalmente em Dubai. Segundo as autoridades locais, 
+            o país deve investir centenas de milhões de dólares em sistemas de 
+            dessalinização e também de tratamento de água.</p>
+          <p>Além dos problemas de falta d'água em termos de disponibilidade 
+            natural, é necessário ressaltar também que existem muitos países 
+            que sofrem com a ausência desse recurso tanto pela poluição e má 
+            gestão quanto por problemas econômicos e não investimento em infraestruturas 
+            de captação e distribuição das águas dos mananciais.</p>
         </div>
+        <div class="ft-page">
+          <h1>Referência deste texto</h1>
+          <p>PENA, Rodolfo F. Alves. "Países que menos possuem água potável"; Brasil Escola. 
+              Disponível em: https://brasilescola.uol.com.br/geografia/paises-que-menos-possuem-agua-potavel.htm.</p>
+              <p>Acesso em 27 de outubro de 2019.</p>
+          </div>
       </div>
 
       <!--==========================
-        Seção da Intro
+        Seção paises com maior consumo
         ============================-->
       <div class="ft-section">
         <div class="ft-page">
-          <h1>Section 2 - Page 1</h1>
+          <h1>Consumo de água no mundo</h1>
+          <p>Ao longo do tempo o consumo de água se elevou exorbitantemente em 
+            todo o planeta. Em 1900 o consumo era de aproximadamente de 580 km3 
+            de água, já em 1950 esse mesmo consumo se elevou para 1400km3 passando 
+            para 4000km3 nos anos de 2000. Segundo dados da ONU, é provável que 
+            em 2025 o nível de consumo suba para 5200km3.</p>
         </div>
         <div class="ft-page">
-          <h1>Section 2 - Page 2</h1>
+          <p>O grande aumento do consumo está ligado as práticas advindas das 
+            atividades econômicas, normalmente a agricultura e indústrias. Em 
+            todo caso esse consumo maior ocorre nos países desenvolvidos.</p>
+          <p>Em outros países a falta de água está ligado a outros fatores como 
+            o consumo maior da população do que a renovação das reservas hídricas, 
+            a má gestão da infraestrutura para transporte e distribuição do 
+            recurso para a população.</p>
         </div>
+        <div class="ft-page">
+            <h1>A seguir, você poderá conferir os países que mais consomem água 
+              no mundo.</h1>
+              <div id="world-map"></div>
+      
+            <!-- Modal -->
+            <div class="modal fade" id="BR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Brazil</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Modal do Brasil
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal fade" id="US" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">USA</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    Os gringos
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="ft-page">
+            <h1>Referência deste texto</h1>
+            <p>PENA, Rodolfo F. Alves. "Consumo de água no mundo"; Brasil Escola. 
+            Disponível em: https://brasilescola.uol.com.br/geografia/consumo-agua-no-mundo.htm.</p>
+            <p>Acesso em 27 de outubro de 2019.</p>
+          </div>
       </div>
 
       <!--==========================
-        Seção da Intro
+        Seção Poluição hídrica
         ============================-->
       <div class="ft-section">
         <div class="ft-page">
-          <h1>Section 3 - Page 1</h1>
+          <h1>Poluição hídrica</h1>
         </div>
         <div class="ft-page">
-          <h1>Section 3 - Page 2</h1>
+          <h1></h1>
         </div>
         <div class="ft-page">
-          <h1>Section 3 - Page 3</h1>
+          <h1>Referência deste texto</h1>
+          <p>FRANCISCO, Wagner de Cerqueria e. "Poluição Hídrica"; Brasil Escola. 
+          Disponível em: https://brasilescola.uol.com.br/geografia/poluicao-hidrica.htm.</p> 
+          <p>Acesso em 28 de outubro de 2019.</p>
         </div>
       </div>
     </div>
@@ -90,6 +236,33 @@
       // starts the application with configuration options
       Flowtime.start();
     </script>
-  </body>
 
+    <script src="jquery-3.4.1.slim.min.js"></script>
+
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script src="jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="jquery-jvectormap-world-mill.js"></script>
+
+    <script>
+        $(function(){
+          $('#world-map').vectorMap({
+              map: 'world_mill',
+              backgroundColor: '#ffffff00',
+              regionStyle: {
+                initial: {
+                    fill: '#999999',
+                    stroke: '#000000',
+                    "stroke-width": 1,
+                }
+              },
+              onRegionClick: function (e, code) {
+                //alert(code);
+                $('#'+code).modal("show");
+              },
+            });
+        });
+      </script>
+
+  </body>
 </html>

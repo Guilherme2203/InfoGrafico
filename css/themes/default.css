@@ -12,6 +12,7 @@ html {
 
 body {
   font-family: sans-serif;
+  color: #ffffff;
 }
 
 .navigation, .credits, .switches {
@@ -20,7 +21,7 @@ body {
 
 .ft-page {
   padding: 2rem;
-  background-color: #424242;
+  background-color: #00025a;
 }
 
 .flowtime h1,
@@ -52,7 +53,7 @@ body {
 .flowtime h6 {
   font-family: "AmaranthBold";
   font-weight: bold;
-  color: #cccccc;
+  color: #ffffff;
   text-shadow: 1px 2px 0 rgba(255,255,255,0.2);
 }
 
@@ -60,12 +61,14 @@ body {
   font-size: 3.5rem;
   line-height: 3rem;
   margin: 1rem 0 2rem 0;
+  text-align: center;
 }
 
 .flowtime h2 {
   font-size: 2.5rem;
   line-height: 2.5rem;
   margin: 2rem 0;
+  text-align: center;
 }
 
 .flowtime h3 {
@@ -88,6 +91,7 @@ body {
   font-size: 1.75rem;
   line-height: 2rem;
   margin: 2rem 0;
+  text-align: justify;
 }
 
 /* lists */
@@ -183,7 +187,7 @@ body {
   font-size: 1.5rem;
   margin: 1.5rem 2rem;
   padding: 1rem;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgb(255, 255, 255);
   border-left: 0.5rem solid rgba(255,255,255,0.5);
   border-radius: 0.5rem;
 }

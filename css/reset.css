@@ -152,13 +152,14 @@ h1 {
   margin: 0.67em 0;
 }
 
+
 /**
  * Add the correct background and color in IE 9-.
  */
 
 mark {
   background-color: #ff0;
-  color: #000;
+  color: rgb(255, 255, 255);
 }
 
 /**
