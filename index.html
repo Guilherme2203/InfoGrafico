@@ -35,6 +35,35 @@
           margin: 0 auto;
         }
     </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script>
+      google.charts.load('current', { 'packages': ['map'] });
+      google.charts.setOnLoadCallback(drawMap);
+  
+      function drawMap() {
+        var data = google.visualization.arrayToDataTable([
+          ['Country', 'water'],
+          ['China', 'China: 85'],
+          ['India', 'India: 135'],
+          ['US', 'US: 575'],
+          ['france', 'france: 285'],
+          ['Brazil', 'Brazil: 185'],
+          ['UK', 'UK: 150'],
+          ['Nigeria', 'Nigeria: 35'],
+          ['autralia', 'autralia: 495'],
+          ['italy', 'italy: 385']
+        ]);
+  
+      var options = {
+        showTooltip: true,
+        showInfoWindow: true
+      };
+  
+      var map = new google.visualization.Map(document.getElementById('chart_div'));
+  
+      map.draw(data, options);
+    };
+    </script>
   </head>
 
   <body>
@@ -154,40 +183,7 @@
         <div class="ft-page">
             <h1>A seguir, você poderá conferir os países que mais consomem água 
               no mundo.</h1>
-              <div id="world-map"></div>
-      
-            <!-- Modal -->
-            <div class="modal fade" id="BR" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Brazil</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Modal do Brasil
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="modal fade" id="US" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">USA</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    Os gringos
-                  </div>
-                </div>
-              </div>
-            </div>
+              <div id="chart_div"></div>
         </div>
         <div class="ft-page">
             <h1>Referência deste texto</h1>
@@ -203,10 +199,27 @@
       <div class="ft-section">
         <div class="ft-page">
           <h1>Poluição hídrica</h1>
+          <p>A poluição hídrica, também conhecida como poluição das águas. Os 
+          principais responsáveis por esse tipo de poluição são os lançamentos 
+          de efluentes industriais, agrícolas, comerciais e esgotos domésticos, 
+          além de resíduos sólidos diversos. Comprometendo assim a qualidade 
+          das águas superficiais e subterrâneas.</p>
         </div>
         <div class="ft-page">
-          <h1></h1>
+          <p>Além de destruir diversas vidas de espécies aquáticas, compromete 
+          o abastecimento e aumenta a proliferação de muitas doenças como a 
+          febre tifoide, meningite, cólera, hepatites A e B, entre outras.</p>
+          <p>Ao longo da história a preocupação com o saneamento básico não 
+          foi uma das maiores preocupações dos políticos, principalmente os 
+          em desenvolvimento.</p>
         </div>
+        <div class="ft-page">
+            <p>Algumas medidas para minimizar a poluição hídrica são:</p>
+            <p>- Maiores investimentos para instalação de estações de tratamento de esgoto;</p>
+            <p>- Intensificação na fiscalização de indústrias;</p>
+            <p>- Educação ambiental para a população em geral;</p>
+            <p>- Utilização de produtos químicos na agricultura menos agressivos ao meio ambiente.</p>
+          </div>
         <div class="ft-page">
           <h1>Referência deste texto</h1>
           <p>FRANCISCO, Wagner de Cerqueria e. "Poluição Hídrica"; Brasil Escola. 
